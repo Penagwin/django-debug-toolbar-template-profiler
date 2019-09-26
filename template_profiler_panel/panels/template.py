@@ -144,7 +144,7 @@ class TemplateProfilerPanel(Panel):
 
         return result
 
-    def process_response(self, request, response):
+    def generate_stats(self, request, response):
         summary = defaultdict(float)
 
         # Collect stats
